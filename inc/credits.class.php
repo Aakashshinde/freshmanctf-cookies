@@ -1,15 +1,13 @@
 <?php
-session_start();
-if (!isset($_SESSION['wat'])) {
-    $_SESSION['wat'] = 'wat';
-    setcookie('credits', '', time() - 3600, '/');
-}
 
 class Credits {
 
     public function __construct() {
-        if (!isset($_COOKIE['credits']))
-            setcookie('credits', '100', 0, '/');
+        session_start();
+        if (!isset($_SESSION['wat'])) {
+            $_SESSION['wat'] = 'wat';
+            setcookie('credits', '', time() - 3600, '/');
+        }
     }
 
     public function getCount() {
