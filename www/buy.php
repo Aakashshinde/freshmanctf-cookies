@@ -1,6 +1,34 @@
 <?php
 requiure_once '../inc/credits.class.php';
 $credits = new Credits();
+
+if (!isset($_GET['item'])) {
+    $header = "Seriously?";
+    $body = "Stop trying to screw with my site."
+} else {
+    switch($_GET['item']) {
+        case 'virus':
+            $cost = $credits->getCount();
+            $header = "Why would you do that?";
+            $body = "Oops, it looks like something went wrong. Maybe you have a virus?</p>".
+                    "<p><em>Hint: You can reset your credits by restarting your browser</em>";
+            break;
+        case 'toaster':
+            $cost = 20;
+            $header = "Cool story bro";
+            $body = "You got a toaster oven! Seriously, this thing makes the best cookies. You should try it out sometime.";
+            break;
+        case 'flag':
+            $cost = 9001;
+            $header = "Congratulations!";
+            $body = 'Your flag for completing this chalenge is <span class="label label-success">c1f40496a39548c9afa56e952bf6063b</span>';
+            break;
+    }
+    if (!$credits->pay($cost) {
+        $header = "Insufficient funds";
+        $body = "You don't have enough credits to pay for that!";
+    }
+}
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -42,52 +70,13 @@ $credits = new Credits();
       </div>
     </div>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Sup n00bs</h1>
-        <p>
-          It's your lucky day, I have a bunch of stuff that freshmen like you probably need and I don't.
-          I'm trying to get rid of this crap, so I'm giving everyone 100 credits to play with. Knock yourselves out.
-        </p>
-        <h3 class="pull-right"><i>&mdash;Laughmaster</i></h3>
+    <div class="container">
+      <div class="jumbotron">
+        <h1><?php echo $header; ?></h1>
+        <p><?php echo $body; ?></p>
+        <p><a class="btn btn-primary pull-right" role="button" href=".">Go Back</a></p>
       </div>
     </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Virus</h2>
-          <p>Buying this may or may not install a virus on your computer. Purchase at your own risk.</p>
-          <p>
-            <h3>
-              Price: 1 Credit
-              <a class="btn btn-primary pull-right" href="buy.php?item=virus" role="button">Purchase</a>
-            </h3>
-          </p>
-        </div>
-        <div class="col-md-4">
-          <h2>Toaster</h2>
-          <p>It's a toaster. It makes toast. What more could you ask for?</p>
-          <p>
-            <h3>
-              Price: 20 Credits
-              <a class="btn btn-primary pull-right" href="buy.php?item=toaster" role="button">Purchase</a>
-            </h3>
-          </p>
-        </div>
-        <div class="col-md-4">
-          <h2>Flag</h2>
-          <p>A flag for l33t h4xx0rz. Good luck trying to get me to sell it to you.</p>
-          <p>
-            <h3>
-              Price: 9001 Credits
-              <a class="btn btn-primary pull-right" href="buy.php?item=flag" role="button">Purchase</a>
-            </h3>
-          </p>
-        </div>
-      </div>
 
       <hr>
 
