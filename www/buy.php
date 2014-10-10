@@ -9,24 +9,25 @@ if (!isset($_GET['item'])) {
     switch($_GET['item']) {
         case 'virus':
             $cost = $credits->getCount();
-            $header = "Why would you do that?";
-            $body = "Oops, it looks like something went wrong. Maybe you have a virus?</p>".
-                    "<p><em>Hint: You can reset your credits by restarting your browser</em>";
+            $header = "Oops, it looks like something went wrong.";
+            $body = "Maybe you have a virus?</p>".
+                    "<p class='hint'><em>Hint: You can reset your credits by restarting your browser</em>";
             break;
         case 'toaster':
             $cost = 20;
-            $header = "Cool story bro";
-            $body = "You got a toaster oven! Seriously, this thing makes the best cookies. You should try it out sometime.";
+            $header = "Toaster ovens are awesome.";
+            $body = "You bought a toaster oven! Seriously, this thing makes the best cookies. You should try it out sometime.";
             break;
         case 'flag':
             $cost = 9001;
             $header = "Congratulations!";
-            $body = 'Your flag for completing this chalenge is <span class="label label-success">c1f40496a39548c9afa56e952bf6063b</span>';
+            $body = 'Your flag for completing this chalenge is <strong>c1f40496a39548c9afa56e952bf6063b</strong>';
             break;
     }
     if (!$credits->pay($cost)) {
         $header = "Insufficient funds";
-        $body = "You don't have enough credits to pay for that!";
+        $body = "You don't have enough credits to pay for that!</p>".
+                "<p class='hint'><em>Hint: You can reset your credits by restarting your browser</em>";
     }
 }
 ?>

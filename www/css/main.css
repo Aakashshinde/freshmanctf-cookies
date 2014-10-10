@@ -16,3 +16,7 @@ body {
 .navbar-inverse .navbar-text {
     color: #eee;
 }
+
+.hint {
+    font-size: 12px;
+}
