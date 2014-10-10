@@ -32,7 +32,7 @@ if (!isset($_GET['item'])) {
         $num = $credits->getCount() - $cost;
     }
 
-    if ($num <= 0 || !$credits->pay($cost)) {
+    if ($credits->credits <= 0) {
         $body .= '</p><p class="hint"><em>Hint: You can reset your credits by restarting your browser</em>';
     }
 }
