@@ -20,7 +20,7 @@ class Credits {
     }
 
     public function pay($cost) {
-        if ($cost > $credits) {
+        if ($cost > $this->credits) {
             return false;
         } else {
             setcookie('credits', $credits - $cost, 0, '/');
