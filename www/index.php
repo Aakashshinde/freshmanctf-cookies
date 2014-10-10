@@ -26,30 +26,16 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Laughmaster's Warez</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a class="" href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span> Your Cart</a></li>
-          </ul>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </div>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
         <h1>Sup n00bs</h1>
-        <p>I'm trying to get rid of this crap, so I'm giving everyone 100 credits to play with. Knock yourselves out.</p>
+        <p>
+          It's your lucky day, I have a bunch of stuff that a bunch of freshmen like you need and I don't.
+          I'm trying to get rid of this crap, so I'm giving everyone 100 credits to play with. Knock yourselves out.
+        </p>
+        <h3 class="pull-right"><i>&emdash; Laughmaster</i></h3>
       </div>
     </div>
 
@@ -78,7 +64,7 @@
         </div>
         <div class="col-md-4">
           <h2>Flag</h2>
-          <p>A flag for l33t h4xx0rz.</p>
+          <p>A flag for l33t h4xx0rz. Good luck trying to get me to sell it to you.</p>
           <p>
             <h3>
               Price: 9001 Credits
