@@ -71,15 +71,17 @@ if (!isset($_GET['item'])) {
     </div>
 
     <div class="jumbotron">
-      <h1><?php echo $header; ?></h1>
-      <p><?php echo $body; ?></p>
-      <h3>
-          You have <?php echo $credits->getCount() - $cost; ?> remaining credits.
-          <a class="btn btn-primary" role="button" href=".">Go Back</a></p>
-      </h3>
-  </div>
-    <div class="container">
+      <div class="container">
+        <h1><?php echo $header; ?></h1>
+        <p><?php echo $body; ?></p>
+        <h3>
+            You have <?php echo $credits->getCount() - $cost; ?> remaining credits.
+            <a class="btn btn-primary" role="button" href=".">Go Back</a></p>
+        </h3>
+      </div>
+    </div>
 
+    <div class="container">
       <hr>
 
       <footer>
