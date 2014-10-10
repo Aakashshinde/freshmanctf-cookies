@@ -11,9 +11,12 @@ class Credits {
     }
 
     public function getCount() {
-        if (!isset($_COOKIE['credits']))
+        if (!isset($_COOKIE['credits'])) {
             setcookie('credits', '100', 0, '/');
-        return $_COOKIE['credits']? $_COOKIE['credits'] : 100;
+            return 100;
+        }
+        
+        return $_COOKIE['credits'];
     }
 
     public function pay($cost) {
