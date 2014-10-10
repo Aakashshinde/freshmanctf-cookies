@@ -70,7 +70,7 @@
           <h2>Flag</h2>
           <p>A flag for l33t h4x0rz.</p>
           <p>
-            <div class="label label-primary">9001 Credits</div>
+            <h3>Cost: <span class="label label-primary">9001 Credits</span></h3>
             <a class="btn btn-default pull-right" href="#" role="button">View details &raquo;</a>
           </p>
         </div>
