@@ -39,7 +39,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a class="" href="cart.php">Credits: <?php //TODO: ?></a></li>
+            <li>You have <span class="label label-success"><?php echo "100"; //TODO: ?></span> credits</li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
