@@ -16,7 +16,7 @@ class Credits {
             setcookie('credits', '100', 0, '/');
             $this->credits = 100;
         }
-        return $credits;
+        return $this->credits;
     }
 
     public function pay($cost) {
