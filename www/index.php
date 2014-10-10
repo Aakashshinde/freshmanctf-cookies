@@ -1,5 +1,5 @@
 <?php
-requiure_once('../inc/credits.class.php');
+require('../inc/credits.class.php');
 $credits = new Credits();
 ?>
 <!DOCTYPE html>
