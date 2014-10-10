@@ -5,6 +5,7 @@ $credits = new Credits();
 if (!isset($_GET['item'])) {
     $header = "Seriously?";
     $body = "Stop trying to screw with my site.";
+    $num = $credits->getCount();
 } else {
     switch($_GET['item']) {
         case 'virus':
