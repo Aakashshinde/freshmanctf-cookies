@@ -4,7 +4,7 @@ $credits = new Credits();
 
 if (!isset($_GET['item'])) {
     $header = "Seriously?";
-    $body = "Stop trying to screw with my site."
+    $body = "Stop trying to screw with my site.";
 } else {
     switch($_GET['item']) {
         case 'virus':
