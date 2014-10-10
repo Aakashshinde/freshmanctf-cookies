@@ -25,8 +25,8 @@ class Credits {
         if ($cost > $this->credits) {
             return false;
         } else {
-            setcookie('credits', $credits - $cost, 0, '/');
-            $this->credits = $credits -$cost;
+            setcookie('credits', $this->credits - $cost, 0, '/');
+            $this->credits = $this->credits - $cost;
             return true;
         }
     }
