@@ -61,8 +61,8 @@
           <p>Buying this may or may not install a virus on your computer. Purchase at your own risk.</p>
           <p>
             <h3>
-              Price: <span class="label label-primary">1 Credit</span>
-              <a class="btn btn-success pull-right" href="buy.php?item=virus" role="button">Buy</a>
+              Price: 1 Credit
+              <a class="btn btn-primary" href="buy.php?item=virus" role="button">Purchase</a>
             </h3>
           </p>
         </div>
@@ -71,8 +71,8 @@
           <p>It's a toaster. It makes toast. What more could you ask for?</p>
           <p>
             <h3>
-              Price: <span class="label label-primary">20 Credits</span>
-              <a class="btn btn-success pull-right" href="buy.php?item=toaster" role="button">Buy</a>
+              Price: 20 Credits
+              <a class="btn btn-primary" href="buy.php?item=toaster" role="button">Purchase</a>
             </h3>
           </p>
         </div>
@@ -81,8 +81,8 @@
           <p>A flag for l33t h4xx0rz.</p>
           <p>
             <h3>
-              Price: <span class="label label-primary">9001 Credits</span>
-              <a class="btn btn-success pull-right" href="buy.php?item=flag" role="button">Buy</a>
+              Price: 9001 Credits
+              <a class="btn btn-primary" href="buy.php?item=flag" role="button">Purchase</a>
             </h3>
           </p>
         </div>
