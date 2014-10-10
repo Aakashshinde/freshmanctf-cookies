@@ -49,7 +49,7 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Sup n00bs</h1>
-        <p>I'm trying to get rid of this crap, so I'm giving everyone 10 credits to play with.</p>
+        <p>I'm trying to get rid of this crap, so I'm giving everyone 100 credits to play with. Knock yourselves out.</p>
       </div>
     </div>
 
@@ -57,23 +57,32 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2>Virus</h2>
+          <p>Buying this may or may not install a virus on your computer. Purchase at your own risk.</p>
+          <p>
+            <h3>
+              Price: <span class="label label-primary">1 Credit</span>
+              <a class="btn btn-success pull-right" href="buy.php?item=virus" role="button">Buy</a>
+            </h3>
+          </p>
+        </div>
+          <h2>Toaster</h2>
+          <p>It's a toaster. It makes toast. What more could you ask for?</p>
+          <p>
+            <h3>
+              Price: <span class="label label-primary">20 Credits</span>
+              <a class="btn btn-success pull-right" href="buy.php?item=toaster" role="button">Buy</a>
+            </h3>
+          </p>
         </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
           <h2>Flag</h2>
-          <p>A flag for l33t h4x0rz.</p>
+          <p>A flag for l33t h4xx0rz.</p>
           <p>
-            <h4>
-              Cost: <span class="label label-primary">9001 Credits</span>
-              <a class="btn btn-default pull-right" href="#" role="button">View details &raquo;</a>
-            </h4>
+            <h3>
+              Price: <span class="label label-primary">9001 Credits</span>
+              <a class="btn btn-success pull-right" href="buy.php?item=flag" role="button">Buy</a>
+            </h3>
           </p>
         </div>
       </div>
