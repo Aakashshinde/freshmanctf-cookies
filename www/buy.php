@@ -28,9 +28,9 @@ if (!isset($_GET['item'])) {
         $header = "Insufficient funds";
         $body = "You don't have enough credits to pay for that!</p>".
                 "<p class='hint'><em>Hint: You can reset your credits by restarting your browser</em>";
-        $num = $credits->getCount() - $cost;
-    } else {
         $num = $credits->getCount();
+    } else {
+        $num = $credits->getCount() - $cost;
     }
 }
 ?>
