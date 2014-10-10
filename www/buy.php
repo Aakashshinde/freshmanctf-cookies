@@ -75,7 +75,7 @@ if (!isset($_GET['item'])) {
         <h1><?php echo $header; ?></h1>
         <p><?php echo $body; ?></p>
         <h3>
-            You have <span class="label label-success"><?php echo $credits->getCount(); ?></span> remaining credits.
+            You have <?php echo $credits->getCount(); ?> remaining credits.
             <a class="btn btn-primary" role="button" href=".">Go Back</a></p>
         </h3>
       </div>

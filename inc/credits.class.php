@@ -1,16 +1,19 @@
 <?php
 session_start();
+if (!isset($_SESSION['wat']))
+    setcookie('credits', '', 0, '/');
+
 class Credits {
 
     public function __construct() {
-        if (!isset($_SESSION['credits']))
-            $_SESSION['credits'] = 100;
+        if (!isset($_COOKIE['credits']))
+            setcookie('credits', '100', 0, '/');
     }
 
     public function getCount() {
-        if (!isset($_SESSION['credits']))
-            $_SESSION['credits'] = 100;
-        return $_SESSION['credits'];
+        if (!isset($_COOKIE['credits']))
+            setcookie('credits', '100', 0, '/');
+        return $_COOKIE['credits'];
     }
 
     public function pay($cost) {
@@ -19,7 +22,7 @@ class Credits {
         if ($cost > $credits) {
             return false;
         } else {
-            $_SESSION['credits'] = $credits-$cost;
+            setcookie('credits', $credits - $cost, 0, '/');
             return true;
         }
     }
