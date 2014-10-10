@@ -1,5 +1,5 @@
 <?php
-requiure_once '../inc/credits.class.php';
+requiure_once('../inc/credits.class.php');
 $credits = new Credits();
 
 if (!isset($_GET['item'])) {
