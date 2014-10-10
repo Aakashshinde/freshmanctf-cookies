@@ -66,6 +66,7 @@
             </h3>
           </p>
         </div>
+        <div class="col-md-4">
           <h2>Toaster</h2>
           <p>It's a toaster. It makes toast. What more could you ask for?</p>
           <p>
