@@ -62,7 +62,7 @@
           <p>
             <h3>
               Price: 1 Credit
-              <a class="btn btn-primary" href="buy.php?item=virus" role="button">Purchase</a>
+              <a class="btn btn-primary pull-right" href="buy.php?item=virus" role="button">Purchase</a>
             </h3>
           </p>
         </div>
@@ -72,7 +72,7 @@
           <p>
             <h3>
               Price: 20 Credits
-              <a class="btn btn-primary" href="buy.php?item=toaster" role="button">Purchase</a>
+              <a class="btn btn-primary pull-right" href="buy.php?item=toaster" role="button">Purchase</a>
             </h3>
           </p>
         </div>
@@ -82,7 +82,7 @@
           <p>
             <h3>
               Price: 9001 Credits
-              <a class="btn btn-primary" href="buy.php?item=flag" role="button">Purchase</a>
+              <a class="btn btn-primary pull-right" href="buy.php?item=flag" role="button">Purchase</a>
             </h3>
           </p>
         </div>
