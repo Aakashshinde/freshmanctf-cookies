@@ -10,8 +10,7 @@ if (!isset($_GET['item'])) {
         case 'virus':
             $cost = $credits->getCount();
             $header = "Oops, it looks like something went wrong.";
-            $body = "Maybe you have a virus?</p>".
-                    "<p class='hint'><em>Hint: You can reset your credits by restarting your browser</em>";
+            $body = "Maybe you have a virus?";
             break;
         case 'toaster':
             $cost = 20;
@@ -26,11 +25,14 @@ if (!isset($_GET['item'])) {
     }
     if (!$credits->pay($cost)) {
         $header = "Insufficient funds";
-        $body = "You don't have enough credits to pay for that!</p>".
-                "<p class='hint'><em>Hint: You can reset your credits by restarting your browser</em>";
+        $body = "You don't have enough credits to pay for that!";
         $num = $credits->getCount();
     } else {
         $num = $credits->getCount() - $cost;
+    }
+
+    if ($num <= 0 || !$credits->pay($cost)) {
+        $body .= '</p><p class="hint"><em>Hint: You can reset your credits by restarting your browser</em>';
     }
 }
 ?>
