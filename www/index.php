@@ -39,7 +39,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="cart.php">Your Cart</a></li>
+            <li><a class="btn btn-success" href="cart.php">Your Cart</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
