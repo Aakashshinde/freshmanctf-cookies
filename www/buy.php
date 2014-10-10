@@ -24,7 +24,7 @@ if (!isset($_GET['item'])) {
             $body = 'Your flag for completing this chalenge is <span class="label label-success">c1f40496a39548c9afa56e952bf6063b</span>';
             break;
     }
-    if (!$credits->pay($cost) {
+    if (!$credits->pay($cost)) {
         $header = "Insufficient funds";
         $body = "You don't have enough credits to pay for that!";
     }
