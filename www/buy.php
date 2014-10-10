@@ -64,7 +64,7 @@ if (!isset($_GET['item'])) {
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="navbar-text">You have <span class="label label-success"><?php echo $_COOKIE['credits']; ?></span> credits</li>
+            <li class="navbar-text">You have <span class="label label-success"><?php echo $credits->getCount(); ?></span> credits</li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
@@ -75,7 +75,7 @@ if (!isset($_GET['item'])) {
         <h1><?php echo $header; ?></h1>
         <p><?php echo $body; ?></p>
         <h3>
-            You have <?php echo $_COOKIE['credits']; ?> remaining credits.
+            You have <?php echo $credits->getCount(); ?> remaining credits.
             <a class="btn btn-primary" role="button" href=".">Go Back</a></p>
         </h3>
       </div>

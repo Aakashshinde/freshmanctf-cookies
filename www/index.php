@@ -36,7 +36,7 @@ $credits = new Credits();
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="navbar-text">You have <span class="label label-success"><?php echo $_COOKIE['credits']; ?></span> credits</li>
+            <li class="navbar-text">You have <span class="label label-success"><?php echo $credits->getCount(); ?></span> credits</li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
