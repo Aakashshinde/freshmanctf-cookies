@@ -74,7 +74,10 @@ if (!isset($_GET['item'])) {
       <div class="jumbotron">
         <h1><?php echo $header; ?></h1>
         <p><?php echo $body; ?></p>
-        <p><a class="btn btn-primary pull-right" role="button" href=".">Go Back</a></p>
+        <h3>
+            You have <span class="label label-success"><?php echo $credits->getCount(); ?></span> remaining credits.
+            <a class="btn btn-primary" role="button" href=".">Go Back</a></p>
+        </h3>
       </div>
 
       <hr>
