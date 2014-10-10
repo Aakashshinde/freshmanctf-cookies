@@ -1,6 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['wat']))
+    $_SESSION['wat'] = 'wat';
     setcookie('credits', '', time() - 3600, '/');
 
 class Credits {
