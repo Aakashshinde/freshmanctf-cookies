@@ -38,7 +38,7 @@
           <a class="navbar-brand" href="#">Laughmaster's Warez</a>
         </div>
         <div class="navbar-collapse collapse">
-          <div class="navbar-right">
+          <div class="nav navbar-nav navbar-right">
             <a href="cart.php">Your Cart</a>
           </div>
           <form class="navbar-form navbar-right" role="form">
