@@ -68,8 +68,8 @@ $credits = new Credits();
           </p>
         </div>
         <div class="col-md-4">
-          <h2>Toaster</h2>
-          <p>It's a toaster. It makes toast. What more could you ask for?</p>
+          <h2>Toaster oven</h2>
+          <p>It's a toaster oven. It makes delicious cookies. What more could you ask for?</p>
           <p>
             <h3>
               Price: 20 Credits
