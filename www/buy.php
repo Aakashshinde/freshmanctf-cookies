@@ -86,7 +86,7 @@ if (!isset($_GET['item'])) {
       <hr>
 
       <footer>
-        <p>&copy; <i>btmcsweeney &amp; The 49th Security Division</i> 2014</p>
+        <p>&copy; 2014 <i>btmcsweeney &amp; The 49th Security Division</i></p>
       </footer>
     </div> <!-- /container -->
 
