@@ -8,6 +8,8 @@ class Credits {
             $_SESSION['wat'] = 'wat';
             setcookie('credits', '', time() - 3600, '/');
             $this->credits = 100;
+        } else {
+            $this->credits = $_COOKIE['credits'];
         }
     }
 
