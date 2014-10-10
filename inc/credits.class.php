@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['wat']))
-    setcookie('credits', '', 0, '/');
+    setcookie('credits', '', time() - 3600, '/');
 
 class Credits {
 
