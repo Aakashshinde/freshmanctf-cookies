@@ -76,7 +76,6 @@ if (!isset($_GET['item'])) {
         <p><?php echo $body; ?></p>
         <p><a class="btn btn-primary pull-right" role="button" href=".">Go Back</a></p>
       </div>
-    </div>
 
       <hr>
 
