@@ -20,7 +20,7 @@ if (!isset($_GET['item'])) {
         case 'flag':
             $cost = 9001;
             $header = "Congratulations!";
-            $body = 'Your flag for completing this chalenge is <strong>c1f40496a39548c9afa56e952bf6063b</strong>';
+            $body = 'Your flag for completing this chalenge is <strong>C00ki35_giV3_Inf0_t00</strong>';
             break;
     }
     if (!$credits->pay($cost)) {
